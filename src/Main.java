@@ -29,32 +29,34 @@ public class Main {
 //        } catch (ClassNotFoundException e) {
 //            throw new RuntimeException(e);
 //        }
-        Scanner in = new Scanner(System.in);
-        Random random = new Random();
-        Stopwatch watch = new Stopwatch();
-        System.out.print("Введіть розмірність квадратного масиву ");
-        int L = in.nextInt();
-        int[][] arrayD = new int[L][L];
-        int[][] arrayA = new int[L][L];
-        int[][] arrayB = new int[L][L];
+//        Scanner in = new Scanner(System.in);
+//        Random random = new Random();
+//        Stopwatch watch = new Stopwatch();
+//        System.out.print("Введіть розмірність квадратного масиву ");
+//        int L = in.nextInt();
+//        int[][] arrayD = new int[L][L];
+//        int[][] arrayA = new int[L][L];
+//        int[][] arrayB = new int[L][L];
+//
+//        for (int i = 0; i < L; i++) {
+//            for (int j = 0; j < L; j++) {
+//                arrayA[i][j] = random.nextInt();
+//                arrayB[i][j] = random.nextInt();
+//            }
+//        }
+//        watch.start();
+//
+//        for (int i = 0; i < L; i++) {
+//            for (int k = 0; k < L; k++) {
+//                for (int j = 0; j < L; j++) {
+//                    arrayD[i][j] += arrayA[i][k] * arrayB[k][j];
+//                }
+//            }
+//        }
+//
+//        watch.stop();
+//        System.out.println( watch.getElapsedTimeMillis());
 
-        for (int i = 0; i < L; i++) {
-            for (int j = 0; j < L; j++) {
-                arrayA[i][j] = random.nextInt();
-                arrayB[i][j] = random.nextInt();
-            }
-        }
-        watch.start();
-
-        for (int i = 0; i < L; i++) {
-            for (int k = 0; k < L; k++) {
-                for (int j = 0; j < L; j++) {
-                    arrayD[i][j] += arrayA[i][k] * arrayB[k][j];
-                }
-            }
-        }
-
-        watch.stop();
-        System.out.println( watch.getElapsedTimeMillis());
+        System.out.println("Hello");
     }
 }
